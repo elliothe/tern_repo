@@ -1,0 +1,28 @@
+"""The models subpackage contains definitions for the following model
+architectures:
+-  `ResNeXt` for CIFAR10 CIFAR100
+You can construct a model with random weights by calling its constructor:
+.. code:: python
+    import models
+    resnext29_16_64 = models.ResNeXt29_16_64(num_classes)
+    resnext29_8_64 = models.ResNeXt29_8_64(num_classes)
+    resnet20 = models.ResNet20(num_classes)
+    resnet32 = models.ResNet32(num_classes)
+
+
+.. ResNext: https://arxiv.org/abs/1611.05431
+"""
+
+
+# from .dw_resnet18_cifar10 import dw_resnet18_cifar10
+# from .dw_resnet18_cifar10_bin import dw_resnet18_cifar10_bin
+# from .nin import nin
+# from .resnet import resnet20
+# from .resnet_dw import resnet20_dw
+# from .dw_resnet18_imagenet import dw_resnet18
+# from .vanilla_resnet_cifar import vanilla_resnet20
+# from .resnet_cifar_expand import expand_resnet20
+# from .resnet_cifar_quan import quan_resnet20
+# from .resnet_cifar_expand_quan import expand_resnet20_quan
+# from .dw_resnet18_imagenet_bin import dw_resnet18_quan
+from .resnet_1x1expand import expand_resnet18	
